@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* Магічний фон для другої сторінки */
+.magic-background {
+  background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: 'MedievalSharp', cursive;
+  padding: 60px 20px;
+}
+
+/* Стилі для текстового блоку */
+.magic-container {
+  background-color: rgba(0, 0, 0, 0.6); /* напівпрозорий темний фон */
+  padding: 40px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  animation: fadeIn 2s ease;
+}
+
+/* Заголовок */
+.magic-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffdd99;
+}
+
+/* Параграфи */
+.magic-container p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Анімація появи контейнера */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Картинка дракончика */
+.dragon-image {
+  margin-top: 30px;
+}
+
+.dragon-image img {
+  width: 80px;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+/* Маленька анімація при наведенні */
+.dragon-image img:hover {
+  transform: scale(1.1);
+}
